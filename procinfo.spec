@@ -8,6 +8,7 @@ URL:		http://freshmeat.net/projects/procinfo
 Source: 	ftp://ftp.cistron.nl/pub/people/svm/procinfo-%{version}.tar.bz2
 Patch0: 	procinfo-14-misc.patch
 BuildRequires: 	libtermcap-devel
+Buildroot: 	%{_tmppath}/%{name}-root
 
 %description
 The procinfo command gets system data from the /proc directory (the kernel
