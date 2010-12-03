@@ -1,7 +1,7 @@
 Summary: 	A tool for gathering and displaying system information
 Name: 		procinfo
 Version:	18
-Release:	%mkrel 11
+Release:	%mkrel 12
 License: 	GPL
 Group: 		Monitoring
 URL:		http://freshmeat.net/projects/procinfo
