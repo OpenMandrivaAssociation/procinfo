@@ -1,7 +1,7 @@
 Summary: 	A tool for gathering and displaying system information
 Name: 		procinfo
 Version:	18
-Release:	%mkrel 13
+Release:	%mkrel 14
 License: 	GPL
 Group: 		Monitoring
 URL:		http://freshmeat.net/projects/procinfo
@@ -64,3 +64,56 @@ rm -rf %{buildroot}
 %{_mandir}/man8/procinfo.8*
 %{_mandir}/man8/lsdev.8*
 %{_mandir}/man8/socklist.8*
+
+
+%changelog
+* Thu May 05 2011 Oden Eriksson <oeriksson@mandriva.com> 18-13mdv2011.0
++ Revision: 667854
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 18-12mdv2011.0
++ Revision: 607214
+- rebuild
+
+* Sun Mar 14 2010 Oden Eriksson <oeriksson@mandriva.com> 18-11mdv2010.1
++ Revision: 519060
+- rebuild
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 18-10mdv2010.0
++ Revision: 426782
+- rebuild
+
+* Mon Dec 22 2008 Oden Eriksson <oeriksson@mandriva.com> 18-9mdv2009.1
++ Revision: 317538
+- sync with procinfo-18-23.fc9.src.rpm
+- use %%ldflags
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 18-9mdv2009.0
++ Revision: 225078
+- rebuild
+
+* Wed Mar 05 2008 Oden Eriksson <oeriksson@mandriva.com> 18-8mdv2008.1
++ Revision: 179364
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 18-7mdv2007.1
++ Revision: 145461
+- Import procinfo
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 18-7mdv2007.1
+- use the %%mrel macro
+- bunzip patches
+
+* Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 18-6mdk
+- Rebuild
+
+* Sat Aug 14 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 18-5mdk
+- build release
+
