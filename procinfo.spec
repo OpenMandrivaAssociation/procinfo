@@ -28,7 +28,7 @@ Install procinfo if you'd like to use it to gather and display system data.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make RPM_OPT_FLAGS="%{optflags} -I/usr/include/ncurses" LDFLAGS="%{ldflags}" LDLIBS="-lncurses"
