@@ -1,7 +1,7 @@
 Summary:	A tool for gathering and displaying system information
 Name:		procinfo
 Version:	18
-Release:	25
+Release:	26
 License:	GPLv2
 Group:		Monitoring
 Url:		http://freshmeat.net/projects/procinfo
@@ -16,6 +16,7 @@ Patch9:		procinfo-18-maxdev.patch
 Patch10:	procinfo-18-ranges.patch
 Patch11:	procinfo-18-cpu-steal.patch
 Patch12:	procinfo-18-intr.patch
+Patch13:	procinfo-18-compile.patch
 BuildRequires:	pkgconfig(ncurses)
 
 %description
@@ -27,8 +28,7 @@ running.
 Install procinfo if you'd like to use it to gather and display system data.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %make RPM_OPT_FLAGS="%{optflags} -I/usr/include/ncurses" LDFLAGS="%{ldflags}" LDLIBS="-lncurses"

@@ -1,0 +1,12 @@
+diff -up procinfo-18/routines.c.omv~ procinfo-18/routines.c
+--- procinfo-18/routines.c.omv~	2023-11-17 21:01:01.785876813 +0100
++++ procinfo-18/routines.c	2023-11-17 21:02:06.411451431 +0100
+@@ -146,7 +146,7 @@ quit (int i)
+ 	exit (0);
+     } else {
+ 	printf ("%s%s%s", ve, se, tgoto (cm, 0, li));
+-	printf ("[%s]\n", sys_siglist[i]);
++	printf ("[%s]\n", strsignal(i));
+ 	exit (128 + i);
+     }
+ }
