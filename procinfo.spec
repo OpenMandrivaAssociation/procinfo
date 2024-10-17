@@ -4,7 +4,7 @@ Version:	18
 Release:	26
 License:	GPLv2
 Group:		Monitoring
-Url:		http://freshmeat.net/projects/procinfo
+Url:		https://freshmeat.net/projects/procinfo
 Source0:	ftp://ftp.cistron.nl/pub/people/svm/procinfo-%{version}.tar.bz2
 Patch0:		procinfo-14-misc.patch
 Patch3:		procinfo-17-mandir.patch
