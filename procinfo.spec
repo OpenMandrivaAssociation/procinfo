@@ -17,6 +17,7 @@ Patch10:	procinfo-18-ranges.patch
 Patch11:	procinfo-18-cpu-steal.patch
 Patch12:	procinfo-18-intr.patch
 Patch13:	procinfo-18-compile.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncurses)
 
 %description
